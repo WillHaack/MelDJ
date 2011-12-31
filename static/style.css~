@@ -1,0 +1,72 @@
+body            { font-family: sans-serif; color: #000000; 
+		  background: #eee;
+		}
+a, h1, h2       { color: #000000; }
+h1, h2          { font-family: 'Georgia', serif; margin: 0; }
+h1              { border-bottom: 2px solid #eee; }
+h2              { font-size: 1.2em; }
+
+.page           { margin: 2em auto; height: 40em; width: 50em; 
+		  border: 2px solid #120122;
+                  padding: 0.8em; background: #37DECD; }
+.banner         { width: 100%; }
+.entries        { list-style: none; margin: 0; padding: 0; }
+.entries li     { margin: 0.8em 1.2em; }
+.entries li h2  { margin-left: -1em; }
+.add-entry      { font-size: 0.9em; border-bottom: 1px solid #ccc; }
+.add-entry dl   { font-weight: bold; }
+.metanav        { text-align: right; font-size: 0.8em; padding: 0.3em;
+                  margin-bottom: 1em; background: #fafafa; }
+.flash          { background: #FFFFFF; padding: 0.5em;
+		  font-family: 'Georgia', serif;
+		  font-weight: bold;
+		  color: #000000;
+                  border: 1px solid #000000; }
+.error          { background: #F0D6D6; padding: 0.5em; }
+.feature_box{
+  width:250px;
+  position:relative;
+  margin:10px 0 20px;
+}
+
+.feature_box h2{
+  background:#001f4d;
+  padding:10px;
+  font-size:20px;
+  margin:0;
+  font-weight:normal;
+  font-family:arial,helvetica,sans-serif;
+}
+
+.feature_box a, .feature_box h2 a{ text-decoration:none; }
+.feature_box h2 a:link, .feature_box h2 a:visited{color:#FFF;}
+.feature_box a:hover{ background:none; }
+.feature_box a, .feature_box img { display:block; }
+
+.feature_box h2 span.sub_hdr{
+  display:block;
+  color:#035ee5;
+  font-size:12px;
+  margin:5px 0 0;
+  font-weight:normal;
+}
+
+.feature_box p{
+  overflow:hidden;
+  width:100%;
+  z-index:1;
+  background: transparent url(/images/jquery/feature_bg.png) repeat;
+  font-family: tahoma,verdana,arial,helvetica,sans-serif;
+  margin:0;
+  font-size: 12px;
+  margin: 0 0 10px 0;
+  line-height:1.5;
+}
+
+.feature_box p a:link, .feature_box p a:visited{
+  width:230px;
+  color:#FFF;
+  padding:10px;
+}
+
+.feature_box p a:hover{ color:#FFF; }

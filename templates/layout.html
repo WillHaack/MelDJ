@@ -1,0 +1,20 @@
+<!doctype html>
+<title>Mel DJ</title>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+<link type="text/css" href="{{url_for('static', filename='jquery/css/ui-darkhives/jquery-ui-1.8.16.custom.css')}}" rel="stylesheet" >
+<script type="text/javascript" src="{{url_for('static', filename='jquery/js/jquery-1.6.2.min.js')}}"></script>
+<script type="text/javascript" src="{{url_for('static', filename='jquery/js/jquery-ui-1.8.16.custom.min.js')}}"></script>
+  <h1><img class="banner"  src="{{url_for('static', filename="DateClashBanner.jpg")}}"/></h1>
+<div class=page>
+  <div class=banner>
+    <a href="/bio" class='jbutton'>bio</a>
+    <a href="/blog" class='jbutton'>blog</a>
+    <a href="/clients" class='jbutton'>clients</a>
+    <a href="/download" class='jbutton'>download</a>
+    <a href="/contact" class='jbutton'>contact</a>
+  </div>
+</div>
+<script>
+  $('.jbutton').button();
+</script>
+<script type="text/javascript" src="{{url_for('static', filename='jquery/js/extra.js')}}"></script>
