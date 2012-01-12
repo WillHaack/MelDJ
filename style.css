@@ -1,4 +1,3 @@
-
 * :focus { outline: 0; }
 
 .banner {
@@ -25,7 +24,7 @@
 .socialMediaIcon{
     position: relative;
     top: 35%;
-    left: 42%;
+    left: 36%;
     width: 50px;
     border: 0;
 }

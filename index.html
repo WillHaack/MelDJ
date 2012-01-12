@@ -1,19 +1,34 @@
 <head>
 <link rel="stylesheet" type="text/css" href="style.css"/>
+<script type="text/javascript" src="js/ac_quicktime.js"></script>
 </head>
 <body>
+
 <div class="banner">
-hey
 </div>
 
 <div class ="content">
-  <EMBED SRC="videos/modrioncut1.mov" height=480px width=100% autostart=true controller=true>
+
+<!--<embed src="videos/modrioncut1.mov" width=100% height=480px id="mcut1embed"></embed> !-->
+
+<script language="javascript" type="text/javascript">
+  QT_WriteOBJECT('videos/modrioncut1.mov' , '100%', '100%', '', 'EnableJavaScript', 'True', 'SCALE', 'aspect', 'obj#ID', 'movieOBJ', 'emb#ID', 'movieEMBED', 'Controller', 'False') ;
+</script>
+<script language="javascript" type="text/javascript">
+  myMovie = document.getElementById('movieEMBED');
+</script>
 </div>
 
+
+
+
 <div class ="footer">
-<span id="lets_connect">Let's connect.</span>
-<a href="http://www.twitter.com"><img src="images/twitter.png" class="socialMediaIcon"></a>
-<a href="http://www.facebook.com"><img src="images/facebook.png" class="socialMediaIcon"></a>
-<a href="http://www.tumblr.com"><img src="images/tumblr.png" class="socialMediaIcon"></a>
+<span id="lets_connect"><i>let's connect</i></span>
+<a href="http://www.twitter.com/meldebarge"><img src="images/twitter.png" class="socialMediaIcon"></a>
+<a href="http://www.facebook.com/meldebarge"><img src="images/facebook.png" class="socialMediaIcon"></a>
+<a href="http://www.bowtiesandgoodtimes.com/"><img src="images/tumblr.png" class="socialMediaIcon"></a>
+<a href="https://plus.google.com/106717100358997966932/about"><img src="images/googleplus.png" class="socialMediaIcon"></a>
+<a href="http://www.youtube.com/meldebarge"><img src="images/youtube.png" class="socialMediaIcon"></a>
+<a href="http://vimeo.com/meldebarge"<img src="images/vimeo.png" class="socialMediaIcon"></a>
 </div>
 </body>
