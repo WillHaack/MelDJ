@@ -1,0 +1,40 @@
+
+* :focus { outline: 0; }
+
+.banner {
+    background-color: #000;
+    color: #FFF;
+    width: 100%;
+    height: 100px;
+}
+
+.content {
+    background-color: #FF003F;
+    height: 480px;
+    width: 100%;
+    color: #FFF;
+}
+
+.footer {
+    position: relative;
+    background-color: #000;
+    height: 100px;
+    width: 100%;
+}
+
+.socialMediaIcon{
+    position: relative;
+    top: 35%;
+    left: 42%;
+    width: 50px;
+    border: 0;
+}
+
+#lets_connect{
+    position: absolute;
+    left: 45%;
+    top: 10%;
+    color: #FFF;
+    font-family: "Helvetica", "Times New Roman", Times, serif;
+    font-weight: bold;
+}
