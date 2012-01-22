@@ -1,34 +1,40 @@
 <head>
 <link rel="stylesheet" type="text/css" href="style.css"/>
-<script type="text/javascript" src="js/ac_quicktime.js"></script>
+<script src="http://jqueryjs.googlecode.com/files/jquery-1.2.6.min.js" type="text/javascript"></script>
+<script src="js/popup.js" type="text/javascript"></script>
+<script src="js/video.js" type="text/javascript"></script>
 </head>
 <body>
 
 <div class="banner">
+  <div id="buttons">
+    <input type="submit" id="bioButton" value="Bio" onclick="changePopupText('bio')">
+    <input type="submit" id="clientButton" value="Clients" onclick="changePopupText('clients')">
+    <input type="submit" id="contactButton" value="Contact" onclick="changePopupText('contact')">
+    <input type="submit" id="downloadButton" value="Downloads">
+  </div>
 </div>
 
 <div class ="content">
-
-<!--<embed src="videos/modrioncut1.mov" width=100% height=480px id="mcut1embed"></embed> !-->
-
-<script language="javascript" type="text/javascript">
-  QT_WriteOBJECT('videos/modrioncut1.mov' , '100%', '100%', '', 'EnableJavaScript', 'True', 'SCALE', 'aspect', 'obj#ID', 'movieOBJ', 'emb#ID', 'movieEMBED', 'Controller', 'False') ;
-</script>
-<script language="javascript" type="text/javascript">
-  myMovie = document.getElementById('movieEMBED');
-</script>
+<iframe id="vimeoVid" width="100%" height="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+<script type="text/javascript">startVideo();</script> 
+<div id="popupContact" class="popupContact">
+  <a id="popupContactClose">x</a>
+  <h1 id="contactAreaTitle">Clients</h1>
+  <p id="contactAreaText">
+    test
+  </p>
 </div>
-
-
-
+<div id="backgroundPopup"></div>
 
 <div class ="footer">
-<span id="lets_connect"><i>let's connect</i></span>
-<a href="http://www.twitter.com/meldebarge"><img src="images/twitter.png" class="socialMediaIcon"></a>
-<a href="http://www.facebook.com/meldebarge"><img src="images/facebook.png" class="socialMediaIcon"></a>
-<a href="http://www.bowtiesandgoodtimes.com/"><img src="images/tumblr.png" class="socialMediaIcon"></a>
-<a href="https://plus.google.com/106717100358997966932/about"><img src="images/googleplus.png" class="socialMediaIcon"></a>
-<a href="http://www.youtube.com/meldebarge"><img src="images/youtube.png" class="socialMediaIcon"></a>
-<a href="http://vimeo.com/meldebarge"<img src="images/vimeo.png" class="socialMediaIcon"></a>
+  <div id="socialMediaButtons">
+    <a href="http://www.twitter.com/meldebarge"><img src="images/twitter.png" class="socialMediaIcon"></a>
+    <a href="http://www.facebook.com/meldebarge"><img src="images/facebook.png" class="socialMediaIcon"></a>
+    <a href="http://www.bowtiesandgoodtimes.com/"><img src="images/tumblr.png" class="socialMediaIcon"></a>
+    <a href="https://plus.google.com/106717100358997966932/about"><img src="images/googleplus.png" class="socialMediaIcon"></a>
+    <a href="http://www.youtube.com/meldebarge"><img src="images/youtube.png" class="socialMediaIcon"></a>
+    <a href="http://vimeo.com/meldebarge"<img src="images/vimeo.png" class="socialMediaIcon"></a>
+       </div>
 </div>
 </body>

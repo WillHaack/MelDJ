@@ -1,0 +1,9 @@
+function playPause(){
+    var isPlaying = this.getRate();
+    if (isPlaying == 0){
+	this.Play();
+    }
+    else {
+	this.Stop();
+    }
+}
